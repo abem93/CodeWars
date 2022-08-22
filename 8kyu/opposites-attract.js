@@ -5,7 +5,7 @@
 //***** My solution *******/
 
 function lovefunc(flower1, flower2){
-    if(flower2 === flower1){
+    if(flower2%2 === flower1%2){
       return false
     }else
       return true
