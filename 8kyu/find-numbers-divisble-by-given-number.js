@@ -7,7 +7,5 @@
 //***** My solution *******/
 
 function divisibleBy(numbers, divisor){
-    numbers = numbers.map(number => { if(number % divisor === 0)
-      return number})
-    return numbers.filter( num => num !== undefined)
+    return numbers.filter(num => num % divisor === 0)
   }
