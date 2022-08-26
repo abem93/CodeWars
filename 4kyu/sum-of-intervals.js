@@ -36,3 +36,12 @@
 // Random Tests
 // 100 tests with 1 - 10 intervals from the range [-20, 20]
 // 100 tests with 20000 - 50000 intervals from the range [-10^9, 10^9]
+function sumIntervals(intervals) {
+    let total = 0
+    let sums = intervals.map(interval => interval[1]-interval[0]) 
+    total = sums.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    0)
+    return total
+  
+  }
