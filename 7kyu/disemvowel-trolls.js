@@ -11,7 +11,7 @@
 //****************** My Solutiion **********************//
 
 function disemvowel(str) {
-    return str.split('').filter(x => !/^[aeiou]/i.test(x)).join('')
+    return str.replace(/[aeiou]/gi, '')
   }
   
   
