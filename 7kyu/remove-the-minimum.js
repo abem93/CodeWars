@@ -21,7 +21,8 @@ function removeSmallest(numbers) {
     let min = this.Math.min(...numbers)
     let index = numbers.indexOf(min)
     if (index > -1) {
-      numbers.splice(index, 1);
+     return numbers.slice(0,index).concat(numbers.slice(index+1,));
+    }else{
+      return []
     }
-    return numbers
   }
