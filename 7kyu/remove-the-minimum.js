@@ -33,3 +33,4 @@ function removeSmallest(numbers) {
     numbers.splice(numbers.indexOf(min), 1);
     return numbers;
   }
+  
