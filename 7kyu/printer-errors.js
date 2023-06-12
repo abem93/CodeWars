@@ -20,12 +20,6 @@ https://www.codewars.com/kata/56541980fa08ab47a0000040/train/javascript
 *************************************************************
 
 function printerError(s) {
-    let total = 0
-    s = s.split().map(x => {
-      if(/^[A-ma-m]+$/.test(x)){
-      }else{
-        total += 1
-      }
-    })
-  return `${total}/{s.length}` 
+    let correct = s.match(/([a-mA-M])\1*/g).join('')
+    return `${s.length - correct.length}/${s.length}`
 }
